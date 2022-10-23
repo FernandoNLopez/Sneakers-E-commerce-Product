@@ -1,0 +1,41 @@
+@use 'vars' as v;
+@use 'mixins';
+
+.input {
+    
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+
+    &__minus {
+        width: 25px;
+        height: 100%;
+        padding: 24px 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__plus {
+        width: 25px;
+        height: 100%;
+        padding: 20px 3px;
+        
+        &:hover {
+            cursor: pointer;
+
+        }
+    }
+    &__number {
+        width: 100%;
+        border: none;
+        background-color: v.$Light-grayish-blue;
+        font-size: 1.3em;
+        font-weight: 700;
+        font-family: v.$Font;
+        text-align: center;
+        outline: none;
+    }
+}
+
